@@ -1,11 +1,11 @@
 <template>
-  <img class="VuetifyLogo" alt="Vuetify Logo" src="/vuetify-logo.svg" />
+  <v-img src="https://i.gifer.com/XOsX.gif" class="VuetifyLogo" />
 </template>
 
 <style>
 .VuetifyLogo {
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   transform: rotateY(560deg);
   animation: turn 3.5s ease-out forwards 1s;
 }

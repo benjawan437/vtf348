@@ -54,10 +54,6 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <nuxt-link to="/">Welecome</nuxt-link>
-      <v-btn depressed color="primary" to="/inspire">INSPIRE</v-btn>
-      <v-btn class="ma-2" outlined color="indigo" to="/profile">PROFILE</v-btn>
-      <v-btn class="ma-2" outlined color="info" to="/shop">SHOP</v-btn>
     </v-app-bar>
     <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
@@ -74,30 +70,20 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
+          icon: 'mdi-home-circle',
+          title: 'Home',
           to: '/',
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Profile',
-          to: '/profile',
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Shop',
-          to: '/shop',
+          icon: 'mdi-ghost',
+          title: 'Anime',
+          to: '/anime',
         },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js',
+      title: 'The Anime',
     }
   },
 }
